@@ -72,3 +72,180 @@
 }
 @media (max-width:359px){.topbar{padding:0 9px}.brand img{width:55px}.brand span{font-size:14px}.navcta{padding:10px 11px;font-size:12px}.hero h1{font-size:43px}.section{padding-inline:14px}.bike-card{flex-basis:calc(100vw - 30px)}.bike-body{padding:16px}}
 @media (prefers-reduced-motion:reduce){.carousel{scroll-behavior:auto}.quick .quick-icon{transition:none}}
+
+/* LXL eCARD Honda v1.2 — adaptación estructural desde tarjeta vertical aprobada */
+:root{--red:#c8102e;--ink:#16171b;--muted:#636670;--line:#e8e8eb;--soft:#f6f6f8;--cardradius:22px}
+html{scroll-padding-top:78px}body{background:linear-gradient(180deg,#f2f2f5,#fafafa 460px,#f7f7f9);overflow-x:clip}main{width:min(100%,1000px);margin:26px auto 32px;background:#fff;box-shadow:0 18px 70px #15151b13;border:1px solid #eee;border-radius:var(--cardradius);overflow:hidden}.topbar{background:#fffdfd}.hero.lxl-intro{display:block;min-height:0;background:#fff;overflow:visible}.card-mark{padding:48px 28px 36px;text-align:center;max-width:740px;margin:auto}.card-topline{font-size:10px;letter-spacing:.17em;font-weight:800;color:#a3273a}.intro-brand{display:block;width:min(245px,66vw);height:125px;object-fit:contain;margin:13px auto 5px}.intro-rule{display:block;background:linear-gradient(90deg,transparent,var(--red),transparent);height:2px;width:145px;margin:8px auto 26px}.intro-label{display:block;color:var(--red);letter-spacing:.19em;font-size:10px;font-weight:800}.lxl-intro h1{font:600 clamp(45px,6.8vw,80px)/1.04 Oswald,Arial,sans-serif;text-transform:uppercase;margin:13px auto 10px;max-width:660px;letter-spacing:-.02em}.lxl-intro h1 em{font-style:normal;color:var(--red)}.job{font-weight:800;letter-spacing:.06em;font-size:14px;margin:0}.intro-message{color:#5b5c63;line-height:1.7;max-width:510px;margin:18px auto 24px;font-size:14px}.intro-cta{display:flex;justify-content:center;gap:11px;flex-wrap:wrap}.intro-cover{height:330px;background:linear-gradient(125deg,#171820,#9b031e);position:relative;overflow:hidden}.intro-cover img{height:100%;width:100%;object-fit:cover;object-position:center 47%;filter:saturate(.92)}.intro-cover-tag{position:absolute;left:25px;bottom:24px;background:#fff;color:#b10023;padding:12px 17px;font-size:11px;letter-spacing:.1em;font-weight:800;border-radius:8px;box-shadow:0 8px 22px #0004}.lxl-actions{max-width:none;padding:24px 25px;gap:6px;margin:0;grid-template-columns:repeat(6,minmax(0,1fr))}.quick a,.quick button{text-align:center;min-width:0}.quick .quick-icon{border:1px solid #ebdce0;background:#fff6f7;box-shadow:0 6px 17px #b20b2510}.quick .quick-icon .icon{width:23px;height:23px}.lxl-banner{text-align:center;padding:40px 24px;background:linear-gradient(140deg,#1a1c22,#29242a);color:#fff}.banner-kicker{font-size:11px;letter-spacing:.19em;color:#ffb4c1;font-weight:800}.lxl-banner h2{font-size:clamp(29px,4.6vw,49px);margin:10px auto}.lxl-banner h2 em{color:#ff5570}.lxl-banner p{font-size:12px;letter-spacing:.09em;color:#e3e1e3}.lxl-segment{padding:55px clamp(20px,6vw,72px);border-bottom:1px solid #ebebee}.intro-section{gap:25px}.models{background:#f8f8fa}.carousel{scrollbar-width:none;-ms-overflow-style:none;overscroll-behavior-inline:contain}.carousel::-webkit-scrollbar{display:none}.bike-card{flex-basis:min(340px,86vw);border:1px solid #e7e7e9;border-radius:14px}.bike-photo{height:210px}.bike-body{padding:20px}.service article{border-radius:13px}.location{grid-template-columns:1fr 1fr;gap:24px}.map,.map iframe{min-height:310px;height:310px}.pay{max-width:none}.lxl-contact-card{text-align:center;padding:60px 20px 65px;border-bottom:1px solid #ececec}.lxl-contact-card h2{font-size:clamp(38px,5vw,55px);margin:12px auto}.lxl-contact-card>p{max-width:500px;margin:14px auto 22px;color:#62666d;line-height:1.6}.identity-panel{width:min(410px,100%);margin:25px auto;padding:27px;border-radius:19px;background:linear-gradient(160deg,#fff,#f8f8fb);border:1px solid #e7e7ec;box-shadow:0 16px 40px #19192311;display:flex;flex-direction:column;gap:6px}.identity-panel img{height:85px;width:190px;object-fit:contain;margin:0 auto 14px}.identity-panel strong{font-family:Oswald,sans-serif;font-size:28px;text-transform:uppercase}.identity-panel span{font-size:12px;color:#666}.card-save-actions{display:flex;align-items:center;justify-content:center;gap:9px;flex-wrap:wrap}.card-qr-note{font-size:11px!important;color:#777!important}.contact{border-radius:0}footer{width:100%;padding:23px max(20px,calc((100vw - 990px)/2));}button:hover,a:hover{transition:background-color .16s,color .16s,transform .16s}button:focus-visible,a:focus-visible{outline:3px solid #126bb2;outline-offset:3px}.icon{vertical-align:middle}
+@media(max-width:800px){main{margin:0 auto 12px;border-radius:0;border:0;box-shadow:none}.lxl-segment{padding:47px 22px}.location{grid-template-columns:1fr}.intro-section{grid-template-columns:1fr}.intro-cover{height:270px}.lxl-actions{grid-template-columns:repeat(3,minmax(0,1fr));padding:16px 12px}.hero.lxl-intro{min-height:0}}
+@media(max-width:480px){.topbar{position:sticky}.card-mark{padding:35px 18px 30px}.intro-brand{height:105px;margin-top:7px}.lxl-intro h1{font-size:clamp(40px,11.5vw,56px)}.intro-message{font-size:13px}.intro-cta{display:grid;grid-template-columns:1fr}.intro-cta .btn{width:100%}.intro-cover{height:225px}.intro-cover-tag{left:12px;bottom:12px;font-size:9px;padding:10px}.lxl-actions{padding:12px 7px}.lxl-actions a,.lxl-actions button{font-size:11px}.lxl-banner{padding:37px 16px}.lxl-banner h2{font-size:34px}.lxl-segment{padding:43px 15px}.models{overflow:hidden}.bike-card{flex:0 0 min(310px,calc(100vw - 34px))}.bike-photo{height:195px}.bike-body{padding:17px}.identity-panel{padding:21px 12px}.identity-panel strong{font-size:25px}.card-save-actions{display:grid;grid-template-columns:1fr}.card-save-actions .btn{width:100%}footer{flex-direction:column;text-align:center}.map,.map iframe{min-height:260px;height:260px}}
+@media(max-width:359px){.lxl-intro h1{font-size:38px}.bike-card{flex-basis:calc(100vw - 30px)}.quick .quick-icon{width:45px;height:45px}.card-mark{padding-left:14px;padding-right:14px}}
+@media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}button,a{transition:none!important}}
+
+/* v1.3 — diseño de ancho fluido y QR WhatsApp en la eCARD */
+:root{--page-gutter:clamp(14px,3.4vw,72px)}
+html,body{max-width:100%}
+main{width:100%;max-width:none;margin:0;background:#fff;box-shadow:none;border:0;border-radius:0;overflow:visible}
+.hero.lxl-intro,.lxl-banner,.lxl-contact-card,.contact,.location,.models,.section,.quick{max-width:none}
+.hero.lxl-intro{width:100%}
+.card-mark{max-width:900px;padding:clamp(32px,4vw,64px) var(--page-gutter)}
+.lxl-intro h1{max-width:860px}
+.intro-cover{height:clamp(260px,34vw,540px)}
+.intro-cover img{object-position:center 46%}
+.lxl-actions{padding:24px var(--page-gutter);gap:clamp(6px,1.4vw,24px)}
+.lxl-segment{padding:clamp(45px,5vw,88px) var(--page-gutter)}
+.lxl-banner{padding:clamp(40px,5vw,75px) var(--page-gutter)}
+.lxl-contact-card{padding:clamp(50px,5vw,85px) var(--page-gutter)}
+.contact{padding:clamp(55px,6vw,95px) var(--page-gutter)}
+footer{padding:26px var(--page-gutter)}
+.whatsapp-qr{display:flex;flex-direction:column;align-items:center;justify-content:center;gap:10px;margin:30px auto 0;padding:23px 20px;max-width:420px;background:#fff;border:1px solid #ebebef;border-radius:18px}
+.qr-image-link{display:flex;align-items:center;justify-content:center;padding:10px;background:#fff;border-radius:14px;border:1px solid #e6e6e9;line-height:0}
+.qr-image-link img{display:block;width:min(220px,65vw);height:auto;aspect-ratio:1/1;object-fit:contain;image-rendering:auto}
+.whatsapp-qr strong{font-weight:800;color:#17171c}
+.whatsapp-qr p{margin:0;font-size:13px;line-height:1.55;color:#555761;max-width:330px}
+.whatsapp-qr .qr-cta{margin-top:5px}
+@media(max-width:800px){main{width:100%;margin:0;border:0;box-shadow:none}.intro-cover{height:clamp(230px,54vw,390px)}.lxl-actions{padding:16px 12px}.lxl-segment{padding:48px 22px}}
+@media(max-width:480px){.card-mark{padding:35px 18px 30px}.intro-cover{height:250px}.lxl-segment{padding:43px 15px}.lxl-contact-card{padding:48px 14px 60px}.whatsapp-qr{padding:18px 12px;margin-top:25px}.whatsapp-qr .qr-cta{min-height:44px;display:inline-flex;align-items:center;justify-content:center}}
+
+
+/* v1.4 — capa responsive LXL: móvil y tablet como prioridades, sin alterar la identidad */
+:root{--page-gutter:clamp(16px,4vw,64px)}
+html{scroll-padding-top:82px}
+body{min-width:0;overflow-x:clip}
+main,main section{min-width:0}
+img,svg,iframe{max-width:100%}
+.section,.lxl-segment,.lxl-banner,.lxl-contact-card,.contact{min-width:0}
+.card-mark,.identity-panel,.contact-inner,.location-copy,.section-head>div{min-width:0}
+.intro-message,.section-head p,.location-copy p,.pay p{overflow-wrap:break-word}
+.hero.lxl-intro{display:block}
+.card-mark{width:100%;max-width:900px;margin-inline:auto}
+.intro-cover img{display:block}
+.lxl-actions{width:100%;margin:0 auto;grid-template-columns:repeat(6,minmax(0,1fr));max-width:1260px}
+.lxl-actions a,.lxl-actions button{min-width:0;min-height:74px;line-height:1.3;overflow-wrap:anywhere}
+.lxl-segment{width:100%;padding-inline:var(--page-gutter)}
+.intro-section>*,.location>*{min-width:0}
+.section-head{align-items:flex-end;flex-wrap:wrap}
+.section-head>div:first-child{flex:1 1 350px}
+.arrows{flex:0 0 auto}
+.arrows button{width:48px;height:48px;min-height:48px}
+.carousel{max-width:100%;min-width:0;scrollbar-width:none;padding-block:6px 18px;scroll-snap-type:x mandatory;overscroll-behavior-x:contain}
+.carousel::-webkit-scrollbar{display:none}
+.bike-card{min-width:0;scroll-snap-align:start;flex:0 0 min(340px,calc(100% - 2px))}
+.bike-body,.bike-actions{min-width:0}
+.bike-actions a,.bike-actions button{min-width:0;min-height:48px}
+.location{grid-template-columns:minmax(0,1fr) minmax(0,1fr)}
+.map,.map iframe{width:100%;max-width:100%}
+.contact h2,.lxl-intro h1{overflow-wrap:normal}
+.contact-links{overflow-wrap:anywhere}
+.mobile-nav{display:none}
+dialog{max-width:calc(100vw - 24px)}
+dialog .btn{max-width:100%;white-space:normal;text-align:center}
+#toast{width:max-content;max-width:calc(100vw - 28px);text-align:center}
+@media (max-width:1024px){
+ .lxl-segment{padding-block:clamp(40px,5vw,65px)}
+ .intro-section{gap:24px}
+ .service-grid{grid-template-columns:repeat(2,minmax(0,1fr))}
+ .location{grid-template-columns:minmax(0,1fr) minmax(0,1fr);gap:20px}
+ .bike-card{flex-basis:min(330px,calc(50% - 10px))}
+ .topbar{padding-inline:24px}
+}
+@media (max-width:820px){
+ .location,.intro-section{grid-template-columns:minmax(0,1fr)}
+ .service-grid{grid-template-columns:repeat(2,minmax(0,1fr))}
+ .map,.map iframe{min-height:300px;height:300px}
+ .lxl-actions{grid-template-columns:repeat(3,minmax(0,1fr));max-width:600px;gap:8px}
+ .bike-card{flex-basis:min(340px,calc(58% - 10px))}
+ .intro-cover{height:clamp(250px,48vw,380px)}
+}
+@media (max-width:767px){
+ html{scroll-padding-top:72px}
+ .topbar{height:66px;padding-inline:16px;gap:9px}
+ .topbar nav{display:none}
+ .brand{gap:9px;min-width:0}
+ .brand img{width:75px;height:43px}
+ .brand span{font-size:17px}
+ .brand small{font-size:8px}
+ .mobile-nav{position:fixed;left:0;right:0;bottom:0;display:grid;grid-template-columns:repeat(3,minmax(0,1fr));z-index:70;background:#fff;border-top:1px solid #e2e2e6;padding:7px 8px max(7px,env(safe-area-inset-bottom));box-shadow:0 -5px 18px #00000013}
+ .mobile-nav a{display:flex;flex-direction:column;align-items:center;justify-content:center;gap:3px;min-height:49px;font-size:11px;font-weight:800;color:#202126;border-radius:8px;padding:4px 8px}
+ .mobile-nav a:focus-visible,.mobile-nav a:hover{color:var(--red);background:#fff1f3}
+ .mobile-nav .icon{height:21px;width:21px}
+ body{padding-bottom:calc(70px + env(safe-area-inset-bottom))}
+ .card-mark{padding:clamp(28px,6vw,45px) 22px}
+ .lxl-intro h1{font-size:clamp(42px,8vw,67px);max-width:95%}
+ .intro-brand{height:105px}
+ .intro-cover{height:clamp(245px,55vw,360px)}
+ .section-head{gap:14px}
+ .arrows{margin-left:0}
+ .service-grid{grid-template-columns:1fr;gap:12px}
+ .service article{padding:22px}
+ .lxl-segment{padding:48px 20px}
+ .bike-card{flex-basis:min(340px,calc(77% - 4px))}
+ .map,.map iframe{min-height:290px;height:290px}
+ .lxl-contact-card{padding:50px 18px}
+ footer{padding-bottom:20px}
+}
+@media (max-width:540px){
+ :root{--page-gutter:16px}
+ .topbar{padding-inline:12px}
+ .card-mark{padding:32px 18px 28px}
+ .card-topline{font-size:9px;line-height:1.5;letter-spacing:.13em}
+ .intro-brand{height:94px;width:min(218px,72vw)}
+ .lxl-intro h1{font-size:clamp(40px,11vw,59px);line-height:1.06;max-width:100%}
+ .intro-message{font-size:14px;line-height:1.65}
+ .intro-cta{display:grid;grid-template-columns:minmax(0,1fr);max-width:390px;margin-inline:auto}
+ .intro-cta .btn{width:100%;min-height:50px}
+ .intro-cover{height:clamp(220px,64vw,300px)}
+ .intro-cover-tag{max-width:calc(100% - 24px);left:12px;bottom:12px;line-height:1.35}
+ .lxl-actions{grid-template-columns:repeat(3,minmax(0,1fr));padding:12px 8px;gap:5px}
+ .lxl-actions a,.lxl-actions button{min-height:85px;font-size:11px;padding:9px 3px}
+ .quick .quick-icon{width:48px;height:48px}
+ .lxl-segment{padding:42px 16px}
+ .section h2{font-size:clamp(34px,9vw,46px)}
+ .section-head{display:flex;flex-wrap:wrap;align-items:center;gap:10px}
+ .section-head>div:first-child{flex:1 1 100%}
+ .arrows{margin-left:0;gap:8px}
+ .arrows button{width:46px;height:46px}
+ .carousel{gap:12px;padding-inline:0;scroll-padding-inline:0}
+ .bike-card{flex:0 0 100%;max-width:100%;border-radius:12px}
+ .bike-photo{height:clamp(190px,60vw,255px)}
+ .bike-body{padding:18px}
+ .bike-actions{grid-template-columns:minmax(0,1fr) auto}
+ .bike-actions a,.bike-actions button{font-size:12px;padding:11px 9px}
+ .bike-body h3{font-size:30px}
+ .service article{padding:20px}
+ .map,.map iframe{height:265px;min-height:265px}
+ .identity-panel{width:100%;padding:20px 14px}
+ .identity-panel strong{font-size:clamp(23px,6.6vw,30px)}
+ .card-save-actions{display:grid;grid-template-columns:1fr;max-width:400px;margin-inline:auto}
+ .contact{padding:54px 16px}
+ .contact h2{font-size:clamp(47px,12vw,70px)}
+ .contact-links{flex-direction:column;align-items:center;gap:12px}
+ .whatsapp-qr{max-width:100%;padding:18px 12px}
+ .qr-image-link img{width:min(220px,65vw)}
+ footer{flex-direction:column;text-align:center;align-items:center}
+}
+@media (max-width:359px){
+ .topbar{padding-inline:8px}
+ .brand img{width:60px}
+ .brand span{font-size:15px}
+ .lxl-intro h1{font-size:38px}
+ .card-mark{padding-inline:13px}
+ .lxl-segment{padding-inline:12px}
+ .bike-body{padding:15px}
+ .bike-actions{grid-template-columns:minmax(0,1fr)}
+ .bike-actions button{width:100%}
+ .lxl-actions a,.lxl-actions button{font-size:10px}
+}
+@media (max-height:460px) and (orientation:landscape) and (max-width:920px){
+ .topbar{height:57px}
+ .mobile-nav{padding-top:3px;padding-bottom:max(3px,env(safe-area-inset-bottom))}
+ .mobile-nav a{min-height:37px;flex-direction:row;gap:8px}
+ body{padding-bottom:calc(53px + env(safe-area-inset-bottom))}
+ .intro-cover{height:235px}
+ .card-mark{padding-block:25px}
+}
+@media(prefers-reduced-motion:reduce){.carousel{scroll-behavior:auto!important}html{scroll-behavior:auto}}
+/* Contención específica del área desplazable, sin recortar contenido de otras secciones */
+.models{overflow:hidden;overflow:clip}
+.carousel{width:100%;max-width:100%;contain:layout paint;overflow-x:auto;overflow-y:hidden}
+@media(max-width:540px){.bike-card{width:100%;flex:0 0 100%}}
+@media(max-width:540px){.section h2,.lxl-banner h2,.lxl-contact-card h2{overflow-wrap:anywhere;hyphens:auto}}
