@@ -249,3 +249,110 @@ dialog .btn{max-width:100%;white-space:normal;text-align:center}
 .carousel{width:100%;max-width:100%;contain:layout paint;overflow-x:auto;overflow-y:hidden}
 @media(max-width:540px){.bike-card{width:100%;flex:0 0 100%}}
 @media(max-width:540px){.section h2,.lxl-banner h2,.lxl-contact-card h2{overflow-wrap:anywhere;hyphens:auto}}
+
+/* LXL v1.5 — medios de pago y recursos, mobile-first */
+.payment-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:clamp(14px,2vw,26px);margin-top:32px;align-items:stretch}.payment-card{min-width:0;padding:clamp(18px,2.3vw,30px);border:1px solid #dedfe3;border-radius:20px;background:#fff;box-shadow:0 12px 36px rgba(10,10,15,.045);display:flex;align-items:flex-start;flex-direction:column;gap:12px}.payment-index{font-size:11px;font-weight:800;letter-spacing:.17em;color:#b50925}.payment-card h3{margin:0;font-size:clamp(21px,2.1vw,29px);line-height:1.2}.payment-card p{margin:0;line-height:1.55;overflow-wrap:anywhere}.payment-card .btn{margin-top:auto;white-space:normal;text-align:center}.bank-number{font-size:clamp(19px,2vw,27px);font-weight:900;letter-spacing:.055em;color:#151515}.payment-note{font-size:12px!important;color:#5a5c63}.payment-qr{width:100%;max-width:240px;max-height:295px;object-fit:contain;align-self:center;border:1px solid #eee;border-radius:12px}.intro-cover img{object-fit:contain!important}.bike-photo img{object-fit:contain!important;background:#f6f6f6}.payment-card .btn:focus-visible{outline:3px solid #151515;outline-offset:3px}@media(max-width:900px){.payment-grid{grid-template-columns:repeat(2,minmax(0,1fr))}.payment-card:last-child{grid-column:1/-1}}@media(max-width:620px){.payment-grid{grid-template-columns:minmax(0,1fr);gap:16px}.payment-card:last-child{grid-column:auto}.payment-card{padding:20px;border-radius:18px}.payment-card .btn{width:100%;justify-content:center}.payment-qr{max-width:225px}.bank-number{letter-spacing:0}.models .disclaimer{font-size:12px}}
+
+/* v1.6: medios de pago por tarjetas y ventanas accesibles */
+.payment-grid-compact{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:clamp(12px,2vw,24px);align-items:stretch;margin-top:28px;text-align:left}
+.payment-card-compact{min-width:0;display:flex;flex-direction:column;align-items:flex-start;padding:clamp(22px,3vw,34px);border:1px solid #e2e3e8;border-radius:18px;background:#fff;box-shadow:0 12px 35px #15151b09;min-height:280px}
+.payment-icon-wrap{width:62px;height:62px;display:grid;place-items:center;color:#c8102e;background:#fff0f2;border:1px solid #f3d8dd;border-radius:17px;margin-bottom:20px}
+.payment-icon{width:32px;height:32px}
+.payment-card-compact h3{font-size:clamp(22px,2.1vw,28px);margin:12px 0}
+.payment-card-compact .payment-summary{font-size:14px;line-height:1.65;text-align:left;margin:0 0 24px;max-width:42ch}
+.payment-card-compact .payment-open{margin-top:auto;display:inline-flex;gap:10px;align-items:center;justify-content:center;min-height:48px;border:0;border-radius:6px;background:#c8102e;color:#fff;cursor:pointer;font-weight:800;padding:13px 18px}
+.payment-card-compact .payment-open:hover{background:#a00a22}
+.payment-modal{width:min(800px,calc(100vw - 28px));max-width:800px;max-height:min(90dvh,900px);height:auto;overflow-y:auto;overscroll-behavior:contain;border:0;border-radius:18px;padding:clamp(16px,3vw,32px);box-shadow:0 25px 90px #0007}
+.payment-modal::backdrop{background:#08090dbc;backdrop-filter:blur(4px)}
+.payment-modal-head{display:flex;justify-content:space-between;gap:15px;align-items:flex-start;margin-bottom:18px}
+.payment-modal-head h2{font:600 clamp(25px,4vw,38px)/1.15 Oswald,Arial,sans-serif;margin:12px 0}
+.payment-modal-close{flex:0 0 44px;width:44px;height:44px;border:1px solid #d4d5d9;background:#f4f4f6;border-radius:50%;display:grid;place-items:center;cursor:pointer}
+.payment-modal .payment-detail-desc{color:#555;line-height:1.65;font-size:14px;margin:5px 0 18px}
+.payment-modal .payment-file-frame{width:100%;height:min(54dvh,550px);min-height:250px;border:1px solid #d9d9de;border-radius:8px;background:#f3f3f5}
+.payment-modal .payment-qr-full{display:block;max-width:min(370px,100%);width:100%;height:auto;object-fit:contain;margin:10px auto 18px;background:#fff;border:1px solid #eee;border-radius:9px}
+.payment-modal .payment-detail-actions{display:flex;flex-wrap:wrap;gap:12px;margin:18px 0 0}
+.payment-modal .payment-detail-actions a,.payment-modal .payment-detail-actions button{display:inline-flex;align-items:center;justify-content:center;gap:9px;padding:12px 17px;min-height:46px;border-radius:7px;font-size:13px;font-weight:800;text-decoration:none;border:1px solid #d2d2d7;color:#191b20;background:#fff;cursor:pointer}
+.payment-modal .payment-detail-actions .primary-action{background:#c8102e;color:#fff;border-color:#c8102e}
+.payment-modal .payment-detail-actions .primary-action:hover{background:#98081d}
+.payment-modal .payment-bank-number{font-weight:800;font-size:24px;letter-spacing:.04em;overflow-wrap:anywhere}
+.payment-modal .payment-reminder{font-size:12px;color:#555;line-height:1.6;margin-top:14px}
+.payment-open:focus-visible,.payment-modal a:focus-visible,.payment-modal button:focus-visible{outline:3px solid #136ab5;outline-offset:3px}
+@media(max-width:850px){.payment-grid-compact{grid-template-columns:repeat(2,minmax(0,1fr))}.payment-card-compact{min-height:260px}}
+@media(max-width:600px){.payment-grid-compact{grid-template-columns:1fr;gap:14px}.payment-card-compact{min-height:0;padding:22px}.payment-icon-wrap{margin-bottom:12px}.payment-card-compact .payment-summary{margin-bottom:16px}.payment-modal{width:calc(100vw - 16px);max-height:92dvh;padding:18px 15px}.payment-modal .payment-file-frame{height:48dvh;min-height:220px}.payment-modal .payment-detail-actions{flex-direction:column}.payment-modal .payment-detail-actions a,.payment-modal .payment-detail-actions button{width:100%}}
+@media(prefers-reduced-motion:reduce){.payment-modal::backdrop{backdrop-filter:none}}
+
+/* v1.7 — visualización ampliada accesible de los diez modelos. */
+.bike-photo{position:relative}.bike-zoom{display:block;position:relative;width:100%;height:100%;padding:0;border:0;background:#f6f6f6;cursor:zoom-in;overflow:hidden}.bike-zoom img{display:block;width:100%;height:100%;object-fit:contain}.bike-zoom .zoom-symbol{position:absolute;bottom:12px;right:12px;display:grid;place-items:center;width:40px;height:40px;background:#fff;border-radius:50%;box-shadow:0 4px 14px #0003;color:#17171c}.zoom-symbol svg{width:21px;height:21px}.bike-zoom:focus-visible{outline:3px solid #136ab5;outline-offset:-4px}.bike-zoom:hover .zoom-symbol{background:#c8102e;color:#fff}.bike-photo .pill{pointer-events:none}.photo-viewer{width:min(1080px,calc(100vw - 26px));max-width:1080px;max-height:92dvh;overflow:auto;border:0;border-radius:18px;padding:clamp(12px,2.3vw,26px);box-shadow:0 28px 90px #0008;background:#fff;color:#17171c}.photo-viewer::backdrop{background:#08080dd9}.photo-viewer-header{display:flex;align-items:center;justify-content:space-between;gap:12px;margin-bottom:12px}.photo-viewer-header h2{font-size:clamp(18px,3vw,28px);line-height:1.2;margin:0}.photo-viewer-close{flex:0 0 46px;width:46px;height:46px;border:1px solid #dedee2;border-radius:50%;background:#f7f7f9;display:grid;place-items:center;cursor:pointer}.photo-viewer-close .icon{width:21px;height:21px}.photo-viewer-figure{margin:0;text-align:center}.photo-viewer-figure img{display:block;width:100%;height:auto;max-height:calc(92dvh - 155px);object-fit:contain;margin:auto;background:#f7f7f9;border-radius:10px}.photo-viewer-figure figcaption{margin-top:9px;color:#5d6069;font-size:13px}.photo-viewer-close:focus-visible{outline:3px solid #136ab5;outline-offset:2px}@media(max-width:600px){.photo-viewer{width:calc(100vw - 12px);max-height:95dvh;padding:12px}.photo-viewer-figure img{max-height:calc(95dvh - 130px)}.photo-viewer-header h2{font-size:19px}}@media(prefers-reduced-motion:reduce){.bike-zoom:hover .zoom-symbol{transition:none}}
+
+/* v1.8 — Diálogos de pago proporcionados y sin scroll externo en escritorio.
+   El iframe del certificado conserva su propio desplazamiento para leer el PDF. */
+.payment-modal{box-sizing:border-box;width:min(720px,calc(100vw - 32px));max-width:720px;height:fit-content;max-height:calc(100dvh - 44px);overflow:hidden;padding:clamp(18px,2.2vw,26px);border-radius:18px}
+.payment-modal-head{margin-bottom:12px;align-items:center}
+.payment-modal-head h2{font-size:clamp(25px,3vw,34px);margin:7px 0 2px}
+.payment-modal .payment-detail-desc{font-size:13px;line-height:1.5;margin:4px 0 11px}
+.payment-modal .payment-detail-actions{margin:12px 0 0;gap:9px}
+.payment-modal .payment-detail-actions a,.payment-modal .payment-detail-actions button{min-height:42px;padding:9px 13px}
+.payment-modal .payment-reminder{margin-top:10px;font-size:11px;line-height:1.45}
+.payment-modal[data-payment-kind="bank"] .payment-file-frame{height:clamp(220px,39dvh,375px);min-height:0;display:block}
+.payment-modal[data-payment-kind="qr"] .payment-qr-full{width:auto;max-width:100%;max-height:min(47dvh,390px);margin:6px auto 10px;object-fit:contain}
+.payment-modal[data-payment-kind="qr"] #payment-modal-content>p:has(strong){margin:8px 0}
+.payment-modal[data-payment-kind="pse"]{width:min(560px,calc(100vw - 32px));max-width:560px;max-height:calc(100dvh - 36px);padding:clamp(20px,3vw,30px)}
+.payment-modal[data-payment-kind="pse"] .payment-modal-head{margin-bottom:10px}
+.payment-modal[data-payment-kind="pse"] .payment-detail-desc{margin:8px 0 12px}
+.payment-modal[data-payment-kind="pse"] .payment-detail-actions{margin:16px 0 8px}
+@media(max-width:600px){
+ .payment-modal{width:calc(100vw - 20px);max-width:calc(100vw - 20px);padding:16px;max-height:calc(100dvh - 24px)}
+ .payment-modal-head h2{font-size:clamp(23px,6vw,30px)}
+ .payment-modal[data-payment-kind="bank"] .payment-file-frame{height:clamp(160px,32dvh,280px)}
+ .payment-modal[data-payment-kind="qr"] .payment-qr-full{max-height:35dvh}
+ .payment-modal[data-payment-kind="pse"]{width:calc(100vw - 24px);max-width:calc(100vw - 24px);padding:18px}
+ .payment-modal .payment-detail-actions{flex-direction:column;gap:7px}
+ .payment-modal .payment-detail-actions a,.payment-modal .payment-detail-actions button{width:100%}
+}
+/* Si el alto disponible es muy reducido, permitir acceso a todos los controles. */
+@media(max-height:660px){
+ .payment-modal{max-height:calc(100dvh - 18px);overflow-y:auto;overscroll-behavior:contain}
+ .payment-modal[data-payment-kind="bank"] .payment-file-frame{height:clamp(150px,28dvh,230px)}
+ .payment-modal[data-payment-kind="qr"] .payment-qr-full{max-height:30dvh}
+}
+
+/* v1.9: cierre comercial sin contactos duplicados; se mantienen los accesos rápidos. */
+
+/* v1.10: crédito de autor legible en pantallas pequeñas */
+footer span:last-child { overflow-wrap: anywhere; text-wrap: balance; }
+@media(max-width: 640px) {footer{display:flex;flex-direction:column;align-items:center;text-align:center;gap:8px;padding-inline:16px;}footer span:last-child{max-width:36ch;line-height:1.5;}}
+
+/* v1.12 | Asesoría + video: compacto, adaptable y sin afectar otras secciones */
+.asesor-video{display:grid;grid-template-columns:minmax(0,1.1fr) minmax(0,.9fr);gap:clamp(20px,3vw,46px);align-items:center;padding-block:clamp(34px,4vw,60px)}
+.asesor-video-copy{min-width:0}
+.asesor-video-copy h2{font-size:clamp(34px,3.65vw,58px);margin:12px 0 16px;line-height:1.07}
+.asesor-video-copy>p{max-width:570px;color:#555962;font-size:clamp(13px,1.05vw,15px);line-height:1.7;margin:0 0 20px}
+.asesor-video-copy .btn{max-width:100%;text-align:center}
+.asesor-video-media{min-width:0;width:100%}
+.video-eyebrow{display:block;color:var(--red);font-size:10px;font-weight:800;letter-spacing:.16em;margin-bottom:10px}
+.video-frame{aspect-ratio:16/9;overflow:hidden;border-radius:13px;background:#171820;box-shadow:0 14px 34px #11121a26}
+.video-frame iframe{width:100%;height:100%;display:block;border:0}
+.video-caption{font-size:11px;color:#686a72;line-height:1.5;margin:9px 0 0}
+.video-caption a{text-decoration:underline;text-underline-offset:2px;font-weight:700}
+@media(max-width:820px){.asesor-video{grid-template-columns:minmax(0,1fr);gap:24px}.asesor-video-copy h2{font-size:clamp(34px,6vw,52px)}.asesor-video-media{max-width:720px}}
+@media(max-width:480px){.asesor-video{padding-block:34px;gap:20px}.asesor-video-copy h2{font-size:clamp(32px,9vw,43px)}.asesor-video-copy .btn{width:100%;min-height:48px}.video-frame{border-radius:9px}}
+
+/* v1.13 — carrusel legible y fotografía de referencia ampliable, priorizando móvil. */
+.bike-photo .bike-zoom img{object-fit:contain;object-position:center;background:#f7f7f7}
+.bike-body{display:flex;flex-direction:column}
+.bike-actions{margin-top:auto}
+@media(max-width:600px){
+ .carousel{gap:12px;scroll-padding-inline:0;scrollbar-width:none}
+ .bike-card{flex:0 0 100%;max-width:100%;min-width:0}
+ .bike-photo{height:clamp(190px,62vw,270px)}
+ .bike-body{padding:18px;min-width:0}
+ .bike-actions{display:grid;grid-template-columns:minmax(0,1fr) auto;gap:8px}
+ .bike-actions>a,.bike-actions>button{min-width:0;min-height:44px}
+ .bike-actions>a{font-size:12px}
+}
+@media(min-width:601px) and (max-width:1024px){.bike-card{flex-basis:min(42vw,380px)}}
+@media(prefers-reduced-motion:reduce){.bike-zoom img{transition:none!important}}
+
+/* v1.15: fotos HQ remotas con fallback local, manteniendo encuadre y control de zoom. */
+.bike-zoom img {object-fit:contain;object-position:center;image-rendering:auto;}
+.photo-viewer img {object-fit:contain;object-position:center;image-rendering:auto;}
